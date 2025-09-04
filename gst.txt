@@ -1,0 +1,216 @@
+Goods & Their GST Rates
+I. Food & Beverages
+
+UHT Milk: Exempt (0% GST)
+
+Plant-Based Milk Drinks (e.g., almond, oat milk): 5% GST (Reduced from 18%)
+
+Soya Milk Drinks: 5% GST (Reduced from 12%)
+
+Indian Breads (e.g., roti, paratha, porotta, pizza bread): Exempt (0% GST)
+
+Food Preparations (not elsewhere specified): 5% GST
+
+Paneer (Cottage Cheese) in pre-packaged & labelled form: Now exempt (0% GST) to promote Indian cottage cheese.
+
+Natural Honey: Lower rate to promote it over artificial honey (specific rate not mentioned, but implied to be lower).
+
+Carbonated Beverages with Fruit Juice: Rate increased (specific new rate not mentioned, but it's to compensate for the removal of Compensation Cess).
+
+Other Non-Alcoholic Beverages: 40% GST (A "special rate" for sin/luxury goods).
+
+Toilet Soap Bars: 5% GST (to benefit lower-income groups).
+
+Tendu Leaves: 5% GST (Reduced, as it is a minor forest produce).
+
+II. Agriculture
+
+Agricultural Machinery/Equipment (e.g., sprinklers, drip irrigation, harvesters, compost machines): 5% GST (Reduced from 12%).
+
+Small Agricultural Tractors: Not fully exempted to avoid breaking the Input Tax Credit (ITC) chain for manufacturers. (Rate not explicitly changed here, but other tractors are at 5%).
+
+Raw Cotton: Still under GST (on reverse charge) to maintain the ITC chain for the textile industry.
+
+III. Healthcare & Pharmaceuticals
+
+All Medicines/Drugs: 5% GST (a concessional rate), except those specifically exempt.
+
+All Medical Devices/Instruments: 5% GST (e.g., surgical, dental apparatus).
+
+Face Powder & Shampoos: 5% GST (daily use items).
+
+Toothpaste, Toothbrush, Dental Floss: 5% GST (basic dental hygiene).
+
+Shaving Cream: 5% GST (daily use item).
+
+Mouthwash: Continues at a higher rate (not reduced, as it is not considered a basic hygiene item).
+
+IV. Automobiles & Transportation
+
+Small Cars (Petrol/LPG/CNG: ≤1200cc & ≤4000mm; Diesel: ≤1500cc & ≤4000mm): 18% GST (Reduced from 28% + Cess).
+
+Mid-size, Large Cars, & SUVs (engine >1500cc or length >4000mm; SUVs must also have ground clearance ≥170mm): 40% GST (No Cess).
+
+Three-Wheelers: 18% GST (Reduced from 28%).
+
+Buses (vehicles for 10+ persons): 18% GST (Reduced from 28%).
+
+Ambulances: 18% GST (Reduced from 28%).
+
+Goods Transport Vehicles (lorries, trucks): 18% GST (Reduced from 28%).
+
+Tractors (except road tractors for semi-trailers >1800cc): 5% GST.
+
+Road Tractors for semi-trailers (engine >1800cc): 18% GST (Reduced from 28%).
+
+Motorcycles (≤350cc): 18% GST.
+
+Motorcycles (>350cc): 40% GST.
+
+Bicycles & Parts: 5% GST (Reduced from 12%).
+
+V. Consumer Durables & Electronics
+
+Air Conditioners: 18% GST (Reduced from 28%).
+
+Dishwashers: 18% GST (Reduced from 28%).
+
+All TVs and Monitors: 18% GST (Uniform rate; previously larger ones were 28%).
+
+Lithium-ion Batteries: 18% GST (Now uniform with other batteries).
+
+Other Batteries: 18% GST (Reduced from 28%).
+
+Spectacles & Goggles for vision correction: 5% GST (Reduced from 12%/18%).
+
+Spectacles & Goggles (non-vision correction): 18% GST.
+
+VI. Textiles & Leather
+
+Job Work for Hides, Skins, Leather (Chapter 41): 5% GST (Reduced from 12%).
+
+Note: Job work for finished leather goods (Chapter 42/64) is not included in this reduction.
+
+Imitation Zari (from metallised plastic film): Refund on inverted duty structure is restricted.
+
+VII. Renewable Energy & Infrastructure
+
+Renewable Energy Equipment/Devices: 5% GST (Reduced from 12%).
+
+Marble, Travertine, & Granite Blocks: 5% GST (Reduced from 12%; treated as intermediate goods).
+
+Coal: Rate increased (Specific new rate not mentioned, but it merges the old 5% GST + ₹400/ton Cess into a single GST rate. No additional burden).
+
+VIII. Other Goods
+
+Cigarettes, Chewing Tobacco, Unmanufactured Tobacco, Beedi: Old rates continue until a later date. New rates will be notified later.
+
+Services & Their GST Rates
+I. Transportation Services
+
+Passenger Transport (General): 5% GST (No ITC). Service provider has the option to charge 18% GST (with full ITC).
+
+Passenger Transport by Air:
+
+Economy Class: 5% GST.
+
+Other Classes: 18% GST. (No option to choose).
+
+Goods Transport by GTA (Goods Transport Agency): 5% GST (No ITC). GTA has the option to charge 18% GST (with full ITC).
+
+Goods Transport by Container Train Operator (CTO): Has the option of 5% GST (No ITC) or 18% GST (with full ITC).
+
+Multimodal Transport of Goods (if no air transport involved): 5% GST (with restricted ITC).
+
+Multimodal Transport of Goods (if air transport is involved): 18% GST (with full ITC).
+
+II. Insurance Services
+
+Individual Life Insurance Policies (term, ULIP, endowment) & their reinsurance: Exempt (0% GST).
+
+Individual Health Insurance Policies (family floater, senior citizen) & their reinsurance: Exempt (0% GST).
+
+III. Job Work Services
+
+For Pharmaceutical Products: 5% GST (with ITC) (Reduced from 12%).
+
+For Hides, Skins, Leather (Chapter 41): 5% GST (with ITC) (Reduced from 12%).
+
+For Alcoholic Liquor: 18% GST (with ITC) (No change).
+
+Residuary Job Work (not specifically mentioned): 18% GST (Increased from 12%).
+
+IV. Other Services
+
+Hotel Accommodation (up to ₹7500 per unit per day): 5% GST (No ITC).
+
+Beauty & Physical Well-being (health clubs, salons, fitness, yoga): 5% GST (No ITC) (Reduced from 18%).
+
+Offshore Works Contract for Oil & Gas Exploration: 18% GST.
+
+Betting, Gambling, Casinos, Horse Racing, Lottery, Online Money Gaming: 40% GST.
+
+Admission to Sporting Events like IPL: 40% GST.
+
+Admission to Recognized Sporting Events:
+
+Ticket price ≤ ₹500: Exempt (0% GST).
+
+Ticket price > ₹500: 18% GST.
+
+General Notes from the FAQ
+Effective Date: Most changes are effective from 22nd September, 2025 (except for specified tobacco products).
+
+"Special Rate": The 40% GST rate applies to a few select goods and services, predominantly "sin goods" (like tobacco, casinos) and luxury goods (like large cars). This rate absorbs the old Compensation Cess.
+
+Inverted Duty Structure: For sectors where the reduced GST rate deepens an inverted duty structure (input tax > output tax), a refund mechanism for accumulated Input Tax Credit (ITC) is available.
+
+ITC on Old Stock: ITC accrued at higher rates before the change can still be used to pay output tax liability after the change.
+
+E-way Bills: No need to cancel and regenerate e-way bills for goods in transit when the new rates come into effect.
+
+
+
+
+Based on standard GST slabs and context, we can infer the most likely rates:
+
+Natural Honey vs. Artificial Honey: The FAQ states the differential treatment is "to promote natural honey" but does not specify the new rates for either. It is highly likely that natural honey is now exempt (0%) or at 5%, while artificial honey remains at a higher rate (likely 18%).
+
+Carbonated Beverages with Fruit Juice: The FAQ states the rate was increased to compensate for the removal of the Compensation Cess but does not state the new rate. Given it's called a "sin good," the new rate is almost certainly the "special rate" of 40%.
+
+Coal: The FAQ states the old rate (5% + ₹400/ton Cess) has been merged into a new GST rate with "no additional burden." It does not state the new ad valorem rate. A common inference is a rate of 12% or 18%, but this is a significant omission.
+
+Mouthwash: The FAQ explains why it was not reduced but does not confirm what rate it remains at. It stays at the standard rate of 18%.
+
+2. Missing Key Goods and Services
+The FAQ answers specific questions but does not provide a comprehensive list of all goods and services. Therefore, many common items are missing because they weren't asked about. For example:
+
+Basic Food Items: No mention of staples like wheat, rice, fresh vegetables, fruits, which are typically exempt.
+
+Common Electronics: No mention of mobile phones, laptops, or other household appliances besides ACs, TVs, and dishwashers.
+
+Apparel and Footwear: A major sector with complex rate structures is not covered in detail beyond some raw material discussions.
+
+Financial Services: Besides insurance, services like banking, stock brokerage, etc., are not mentioned.
+
+Telecom Services: Not mentioned.
+
+Construction and Real Estate Services: Not mentioned.
+
+3. Clarifications and Context from the FAQ
+Some points in the initial summary, while correct, benefit from the context given in the FAQ answers:
+
+Why not 0%? For many goods (like medicines, agricultural machinery, tractors), the FAQ repeatedly explains that a nil rate (0%) would break the Input Tax Credit (ITC) chain. This would force manufacturers to absorb input costs or pass them on, ultimately making the product more expensive for the consumer/farmer. Therefore, a 5% rate is a compromise that provides relief while preserving the ITC chain.
+
+The "Special Rate" of 40%: This isn't a new slab but a consolidation. It applies to goods that previously had 28% GST + a high Compensation Cess (like large cars, tobacco). The cess has been eliminated, and the total tax burden is merged into a single 40% GST rate.
+
+The Principle of "Rate Rationalization": The key driver behind these changes is to minimize classification disputes. The Council aimed to put similar goods in the same tax bracket (e.g., all "Indian breads," all TVs, all batteries).
+
+Summary of What's Missing:
+Category	What's Missing	Probable Rate (Inference from Context)
+Goods	Natural Honey	0% or 5% (Exact rate not specified)
+Goods	Artificial Honey	18% (Exact rate not specified)
+Goods	Carbonated Beverages with Fruit Juice	40% (Exact rate not specified)
+Goods	Coal (new ad valorem rate)	12% or 18% (Exact rate not specified)
+Goods	Mouthwash	18% (Confirmed as not reduced)
+Coverage	Comprehensive list of all products	N/A - The document is an FAQ, not a full tariff schedule.

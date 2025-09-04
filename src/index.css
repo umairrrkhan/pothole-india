@@ -1,0 +1,165 @@
+/* Import Inter font and Japanese fonts for typography */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Zen+Tokyo+Zo:wght@400&display=swap');
+
+/* Tailwind CSS directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles for Pothole Indi with Japanese aesthetics */
+@layer base {
+  body {
+    font-family: 'Inter', 'Noto Sans JP', system-ui, sans-serif;
+    background-color: #FFFFFF;
+    color: #000000;
+    line-height: 1.6;
+  }
+
+  /* Ensure consistent text color throughout */
+  * {
+    color: #000000;
+  }
+
+  /* Smooth scrolling for better UX */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Japanese-inspired typography */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', 'Zen Tokyo Zo', system-ui, sans-serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom utilities for glassmorphism effect with Japanese design principles */
+@layer utilities {
+  .glassmorphism {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
+  }
+
+  .glassmorphism-header {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0 0 30px 30px;
+  }
+
+  /* Custom button styles with Japanese aesthetics */
+  .btn-primary-custom {
+    @apply bg-gradient-to-r from-indigo-600 to-blue-700 text-white px-6 py-3 rounded-xl font-medium hover:from-indigo-700 hover:to-blue-800 transition-all duration-300 shadow-md hover:shadow-lg;
+  }
+
+  /* Enhanced card styles with Japanese minimalism */
+  .card-custom {
+    @apply bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300;
+  }
+  
+  /* Japanese-inspired gradient utilities */
+  .gradient-text {
+    background: linear-gradient(90deg, #4f46e5, #0ea5e9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .gradient-border {
+    position: relative;
+  }
+  
+  .gradient-border::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #0ea5e9, #0d9488, #4f46e5);
+    border-radius: 3px 3px 0 0;
+  }
+}
+
+/* Enhanced loading animations with Japanese aesthetics */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.animate-slideIn {
+  animation: slideIn 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.animate-popIn {
+  animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Japanese-inspired decorative elements */
+.dot-pattern {
+  background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.cherry-blossom-pattern {
+  background-image: radial-gradient(#fbcfe8 2px, transparent 2px);
+  background-size: 30px 30px;
+}
+
+/* Responsive utilities with enhanced Japanese aesthetics */
+@media (max-width: 768px) {
+  .glassmorphism-header {
+    border-radius: 0 0 20px 20px;
+  }
+  
+  .animate-fadeIn {
+    animation: fadeIn 0.4s ease-out;
+  }
+}
+
+/* Subtle hover effects inspired by Japanese design */
+.japanese-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.japanese-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}

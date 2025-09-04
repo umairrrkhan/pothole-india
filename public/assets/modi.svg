@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" fill="#f0f0f0"/>
+  <circle cx="100" cy="80" r="30" fill="#cccccc"/>
+  <rect x="70" y="120" width="60" height="80" fill="#cccccc"/>
+  <text x="100" y="170" font-family="Arial, sans-serif" font-size="16" fill="#666666" text-anchor="middle">MODI</text>
+  <text x="100" y="190" font-family="Arial, sans-serif" font-size="12" fill="#999999" text-anchor="middle">Prime Minister of India</text>
+</svg>
