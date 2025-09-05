@@ -7,22 +7,13 @@ import modiImage from '../assets/modi.png';
  * Props for HeroSection component
  */
 interface HeroSectionProps {
-  onCertificateGenerate: (data: {
-    image: string;
-    location: {
-      latitude: number;
-      longitude: number;
-    };
-    date: string;
-    time: string;
-  }) => void;
 }
 
 /**
  * Optimized Hero section component for Pothole Indi landing page
  * Features efficient background animations and minimal re-renders for 120fps performance
  */
-const HeroSection: React.FC<HeroSectionProps> = memo(({ onCertificateGenerate }) => {
+const HeroSection: React.FC<HeroSectionProps> = memo(() => {
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [capturedImage, setCapturedImage] = useState<string | null>(null);
   const [isProcessing, setIsProcessing] = useState(false);

@@ -58,7 +58,7 @@ const PRODUCT_CATEGORIES: Category[] = [
         parameters: [
           { name: 'Engine Capacity (cc)', type: 'number', required: true },
           { name: 'Length (mm)', type: 'number', required: true },
-          { name: 'Fuel Type', type: 'select', options: ['Petrol', 'Diesel', 'LPG', 'CNG'] }
+          { name: 'Fuel Type', type: 'select', required: true, options: ['Petrol', 'Diesel', 'LPG', 'CNG'] }
         ]
       },
       { 
@@ -69,7 +69,7 @@ const PRODUCT_CATEGORIES: Category[] = [
           { name: 'Engine Capacity (cc)', type: 'number', required: true },
           { name: 'Length (mm)', type: 'number', required: true },
           { name: 'Ground Clearance (mm)', type: 'number', required: false },
-          { name: 'Vehicle Type', type: 'select', options: ['Sedan', 'SUV', 'Hatchback'] }
+          { name: 'Vehicle Type', type: 'select', required: true, options: ['Sedan', 'SUV', 'Hatchback'] }
         ]
       },
       { name: 'Three-Wheelers', rate: 18, conditions: '' },

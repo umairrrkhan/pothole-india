@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';  
@@ -29,7 +28,7 @@ function App() {
           {/* Main content sections */}
           <main>
             {/* Hero Section */}
-            <HeroSection onCertificateGenerate={() => {}} />
+            <HeroSection />
 
             {/* How It Works Section */}
             <HowItWorks />
