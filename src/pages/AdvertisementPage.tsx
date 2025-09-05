@@ -1,8 +1,8 @@
 import React from 'react';
 
 /**
- * AdvertisementPage component for Pothole Indi
- * Provides information about advertising opportunities
+ * AdvertisementPage component for Pothole Indi with liquid glass design
+ * Provides information about advertising opportunities with enhanced aesthetics
  */
 const AdvertisementPage: React.FC = () => {
   const adPackages = [
@@ -33,9 +33,9 @@ const AdvertisementPage: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-12 px-4">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 py-12 px-4">
       <div className="max-w-6xl mx-auto">
-        {/* Page Header */}
+        {/* Page Header with enhanced design */}
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-black mb-4 tracking-tight">
             Advertise with Us
@@ -45,30 +45,16 @@ const AdvertisementPage: React.FC = () => {
           </p>
         </div>
 
-        {/* Stats Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-          <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 text-center">
-            <div className="text-3xl font-bold text-blue-600 mb-2">10K</div>
-            <div className="text-gray-600">Monthly Visitors</div>
-          </div>
-          <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 text-center">
-            <div className="text-3xl font-bold text-green-600 mb-2">85%</div>
-            <div className="text-gray-600">Mobile Users</div>
-          </div>
-          <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 text-center">
-            <div className="text-3xl font-bold text-indigo-600 mb-2">72%</div>
-            <div className="text-gray-600">Returning Visitors</div>
-          </div>
-        </div>
+        
 
-        {/* Ad Packages */}
+        {/* Ad Packages with glass design */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-black mb-8 text-center">Advertising Packages</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {adPackages.map((pkg, index) => (
               <div 
                 key={index} 
-                className={`bg-white rounded-2xl p-8 shadow-lg border border-gray-200 transition-all duration-300 hover:shadow-xl ${
+                className={`bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-gray-200/50 transition-all duration-300 hover:shadow-xl ${
                   index === 0 ? 'ring-2 ring-blue-500 transform scale-105' : ''
                 }`}
               >
@@ -89,16 +75,19 @@ const AdvertisementPage: React.FC = () => {
                     </li>
                   ))}
                 </ul>
-                <button className="w-full bg-gradient-to-r from-indigo-600 to-blue-700 text-white py-3 px-6 rounded-lg font-bold hover:from-indigo-700 hover:to-blue-800 transition-all duration-300 shadow-md hover:shadow-lg">
-                  Get Started
-                </button>
+                <a 
+                  href="/contact" 
+                  className="w-full bg-white/30 backdrop-blur-lg border border-white/50 text-gray-800 py-3 px-6 rounded-lg font-bold hover:bg-white/40 transition-all duration-300 shadow-lg hover:shadow-xl glass-button text-center block"
+                >
+                  Contact Us
+                </a>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Why Advertise With Us */}
-        <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 mb-16">
+        {/* Why Advertise With Us with glass design */}
+        <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-gray-200/50 mb-16">
           <h2 className="text-3xl font-bold text-black mb-8 text-center">Why Advertise with Pothole Indi?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>

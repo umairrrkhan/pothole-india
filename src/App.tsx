@@ -5,10 +5,11 @@ import HeroSection from './components/HeroSection';
 import HowItWorks from './components/HowItWorks';
 import FAQSection from './components/FAQSection';
 import Footer from './components/Footer';
-import CertificateModal from './components/CertificateModal';
 import ContactPage from './pages/ContactPage';
 import AdvertisementPage from './pages/AdvertisementPage';
 import GSTPage from './pages/GSTPage';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+import TermsConditionsPage from './pages/TermsConditionsPage';
 import './App.css';
 
 /**
@@ -16,18 +17,6 @@ import './App.css';
  * Coordinates all sections and manages global state
  */
 function App() {
-  const [showCertificateModal, setShowCertificateModal] = useState(false);
-  const [certificateData, setCertificateData] = useState<any>(null);
-
-  /**
-   * Handles certificate generation after image capture
-   * @param {Object} data - Contains image, location, and date information
-   */
-  const handleCertificateGeneration = (data: any) => {
-    setCertificateData(data);
-    setShowCertificateModal(true);
-  };
-
   // Create router configuration
   const router = createBrowserRouter([
     {
@@ -40,7 +29,7 @@ function App() {
           {/* Main content sections */}
           <main>
             {/* Hero Section */}
-            <HeroSection onCertificateGenerate={handleCertificateGeneration} />
+            <HeroSection onCertificateGenerate={() => {}} />
 
             {/* How It Works Section */}
             <HowItWorks />
@@ -105,19 +94,45 @@ function App() {
         </div>
       ),
     },
+    {
+      path: "/privacy-policy",
+      element: (
+        <div className="min-h-screen bg-white text-black">
+          {/* Header with enhanced design */}
+          <Header />
+          
+          {/* Main content sections */}
+          <main>
+            <PrivacyPolicyPage />
+          </main>
+          
+          {/* Footer */}
+          <Footer />
+        </div>
+      ),
+    },
+    {
+      path: "/terms-conditions",
+      element: (
+        <div className="min-h-screen bg-white text-black">
+          {/* Header with enhanced design */}
+          <Header />
+          
+          {/* Main content sections */}
+          <main>
+            <TermsConditionsPage />
+          </main>
+          
+          {/* Footer */}
+          <Footer />
+        </div>
+      ),
+    },
   ]);
 
   return (
     <div className="min-h-screen bg-white text-black">
       <RouterProvider router={router} />
-      
-      {/* Certificate Modal */}
-      {showCertificateModal && certificateData && (
-        <CertificateModal
-          data={certificateData}
-          onClose={() => setShowCertificateModal(false)}
-        />
-      )}
     </div>
   );
 }

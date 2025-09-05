@@ -228,11 +228,6 @@ const GSTPage: React.FC = () => {
   const [isCalculating, setIsCalculating] = useState<boolean>(false);
   const [activeTab, setActiveTab] = useState<'goods' | 'services'>('goods');
 
-  // Get all products/services based on active tab
-  const allItems: Product[] = activeTab === 'goods' 
-    ? PRODUCT_CATEGORIES.flatMap(cat => cat.products.map(p => ({...p, category: cat.name})))
-    : SERVICE_CATEGORIES.flatMap(cat => cat.products.map(s => ({...s, category: cat.name})));
-
   // Handle product selection
   const handleProductSelect = (product: Product) => {
     setSelectedProduct(product);
@@ -379,25 +374,25 @@ const GSTPage: React.FC = () => {
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Product/Service Selection */}
+          {/* Product/Service Selection with glass design */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="lg:col-span-1 bg-white rounded-2xl shadow-xl p-6"
+            className="lg:col-span-1 bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl p-6 border border-gray-200/50"
           >
             <h2 className="text-2xl font-bold text-gray-800 mb-6">Select Product/Service</h2>
             
-            {/* Tabs */}
-            <div className="flex mb-6 bg-gray-100 rounded-lg p-1">
+            {/* Tabs with glass design */}
+            <div className="flex mb-6 bg-white/50 backdrop-blur-sm rounded-lg p-1 border border-gray-200/50">
               <button
                 onClick={() => {
                   setActiveTab('goods');
                   resetForm();
                 }}
-                className={`flex-1 py-2 px-4 rounded-md text-center font-medium transition ${
+                className={`flex-1 py-2 px-4 rounded-md text-center font-medium transition glass-button ${
                   activeTab === 'goods' 
-                    ? 'bg-white text-indigo-600 shadow' 
+                    ? 'bg-white/80 text-indigo-600 shadow' 
                     : 'text-gray-600 hover:text-gray-800'
                 }`}
               >
@@ -408,9 +403,9 @@ const GSTPage: React.FC = () => {
                   setActiveTab('services');
                   resetForm();
                 }}
-                className={`flex-1 py-2 px-4 rounded-md text-center font-medium transition ${
+                className={`flex-1 py-2 px-4 rounded-md text-center font-medium transition glass-button ${
                   activeTab === 'services' 
-                    ? 'bg-white text-indigo-600 shadow' 
+                    ? 'bg-white/80 text-indigo-600 shadow' 
                     : 'text-gray-600 hover:text-gray-800'
                 }`}
               >
@@ -418,7 +413,7 @@ const GSTPage: React.FC = () => {
               </button>
             </div>
             
-            {/* Category Selection */}
+            {/* Category Selection with glass design */}
             <div className="mb-6">
               <label className="block text-sm font-medium text-gray-700 mb-2">
                 Category
@@ -430,7 +425,7 @@ const GSTPage: React.FC = () => {
                   setSelectedProduct(null);
                   setResult(null);
                 }}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition"
+                className="w-full px-4 py-3 border border-gray-200/50 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition glass-button"
               >
                 <option value="">Select a category</option>
                 {categories.map((category) => (
@@ -441,7 +436,7 @@ const GSTPage: React.FC = () => {
               </select>
             </div>
             
-            {/* Product/Service Selection */}
+            {/* Product/Service Selection with glass design */}
             {selectedCategory && (
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -459,10 +454,10 @@ const GSTPage: React.FC = () => {
                           >
                             <button
                               onClick={() => handleProductSelect(product)}
-                              className={`w-full text-left p-4 rounded-lg border transition ${
+                              className={`w-full text-left p-4 rounded-lg border transition glass-button ${
                                 selectedProduct?.name === product.name
-                                  ? 'border-indigo-500 bg-indigo-50'
-                                  : 'border-gray-200 hover:border-indigo-300 hover:bg-indigo-50'
+                                  ? 'border-indigo-500 bg-indigo-50/50'
+                                  : 'border-gray-200/50 hover:border-indigo-300 hover:bg-indigo-50/30'
                               }`}
                             >
                               <div className="font-medium text-gray-800">{product.name}</div>
@@ -478,25 +473,25 @@ const GSTPage: React.FC = () => {
             )}
           </motion.div>
           
-          {/* Calculator and Results */}
+          {/* Calculator and Results with glass design */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
             className="lg:col-span-2 space-y-8"
           >
-            {/* Calculator Section */}
-            <div className="bg-white rounded-2xl shadow-xl p-6">
+            {/* Calculator Section with glass design */}
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl p-6 border border-gray-200/50">
               <h2 className="text-2xl font-bold text-gray-800 mb-6">Calculate GST</h2>
               
               {selectedProduct ? (
                 <div className="space-y-6">
-                  <div className="bg-indigo-50 p-4 rounded-lg">
+                  <div className="bg-indigo-50/50 p-4 rounded-lg border border-indigo-100/50">
                     <h3 className="font-bold text-indigo-800">{selectedProduct.name}</h3>
                     <p className="text-gray-600 text-sm mt-1">{selectedProduct.conditions}</p>
                   </div>
                   
-                  {/* Product-specific parameters */}
+                  {/* Product-specific parameters with glass design */}
                   {selectedProduct.parameters && selectedProduct.parameters.map((param, index) => (
                     <div key={index}>
                       <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -506,7 +501,7 @@ const GSTPage: React.FC = () => {
                         <select
                           value={productParameters[param.name] || ''}
                           onChange={(e) => handleParameterChange(param.name, e.target.value)}
-                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition"
+                          className="w-full px-4 py-3 border border-gray-200/50 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition glass-button"
                         >
                           <option value="">Select {param.name}</option>
                           {param.options && param.options.map((option, optIndex) => (
@@ -520,14 +515,14 @@ const GSTPage: React.FC = () => {
                           type={param.type}
                           value={productParameters[param.name] || ''}
                           onChange={(e) => handleParameterChange(param.name, e.target.value)}
-                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition"
+                          className="w-full px-4 py-3 border border-gray-200/50 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition glass-button"
                           placeholder={`Enter ${param.name}`}
                         />
                       )}
                     </div>
                   ))}
                   
-                  {/* Amount Input */}
+                  {/* Amount Input with glass design */}
                   <div>
                     <label htmlFor="amount" className="block text-sm font-medium text-gray-700 mb-2">
                       Amount (₹)
@@ -537,14 +532,14 @@ const GSTPage: React.FC = () => {
                       id="amount"
                       value={amount}
                       onChange={(e) => setAmount(e.target.value)}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition"
+                      className="w-full px-4 py-3 border border-gray-200/50 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition glass-button"
                       placeholder="Enter amount"
                     />
                   </div>
                   
-                  {/* Dynamic Rate Display */}
+                  {/* Dynamic Rate Display with glass design */}
                   {selectedProduct && (
-                    <div className="bg-blue-50 p-4 rounded-lg">
+                    <div className="bg-blue-50/50 p-4 rounded-lg border border-blue-100/50">
                       <div className="flex justify-between">
                         <span className="font-medium text-gray-700">Applicable GST Rate:</span>
                         <span className="font-bold text-blue-700">
@@ -563,10 +558,10 @@ const GSTPage: React.FC = () => {
                     <button
                       onClick={calculateGST}
                       disabled={!amount || isCalculating}
-                      className={`flex-1 py-3 px-6 rounded-lg font-medium transition ${
+                      className={`flex-1 py-3 px-6 rounded-lg font-medium transition glass-button ${
                         !amount || isCalculating
-                          ? 'bg-gray-300 cursor-not-allowed'
-                          : 'bg-indigo-600 hover:bg-indigo-700 text-white shadow-md hover:shadow-lg transform hover:-translate-y-0.5'
+                          ? 'bg-gray-300/50 cursor-not-allowed'
+                          : 'bg-white/30 backdrop-blur-lg border border-white/50 text-gray-800 hover:bg-white/40'
                       }`}
                     >
                       {isCalculating ? 'Calculating...' : 'Calculate GST'}
@@ -574,7 +569,7 @@ const GSTPage: React.FC = () => {
                     
                     <button
                       onClick={resetForm}
-                      className="py-3 px-6 bg-gray-200 hover:bg-gray-300 text-gray-800 rounded-lg font-medium transition"
+                      className="py-3 px-6 bg-white/30 backdrop-blur-lg border border-white/50 text-gray-800 rounded-lg font-medium transition glass-button hover:bg-white/40"
                     >
                       Reset
                     </button>
@@ -621,25 +616,25 @@ const GSTPage: React.FC = () => {
                 </motion.div>
               )}
               
-              {/* Results */}
+              {/* Results with glass design */}
               {result && (
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5 }}
-                  className="mt-8 p-6 bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl border border-indigo-100"
+                  className="mt-8 p-6 bg-gradient-to-r from-indigo-50/50 to-purple-50/50 rounded-xl border border-indigo-100/50 backdrop-blur-sm"
                 >
                   <h3 className="text-xl font-bold text-gray-800 mb-4">Calculation Results</h3>
                   <div className="space-y-3">
-                    <div className="flex justify-between py-2 border-b border-gray-200">
+                    <div className="flex justify-between py-2 border-b border-gray-200/50">
                       <span className="font-medium text-gray-600">Product/Service:</span>
                       <span className="font-semibold">{result.productName}</span>
                     </div>
-                    <div className="flex justify-between py-2 border-b border-gray-200">
+                    <div className="flex justify-between py-2 border-b border-gray-200/50">
                       <span className="font-medium text-gray-600">Original Amount:</span>
                       <span className="font-semibold">₹{result.originalAmount.toFixed(2)}</span>
                     </div>
-                    <div className="flex justify-between py-2 border-b border-gray-200">
+                    <div className="flex justify-between py-2 border-b border-gray-200/50">
                       <span className="font-medium text-gray-600">GST ({result.gstRate}%):</span>
                       <span className="font-semibold text-indigo-600">₹{result.gstAmount.toFixed(2)}</span>
                     </div>
@@ -652,8 +647,8 @@ const GSTPage: React.FC = () => {
               )}
             </div>
             
-            {/* GST Information Section */}
-            <div className="bg-white rounded-2xl shadow-xl p-6">
+            {/* GST Information Section with glass design */}
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl p-6 border border-gray-200/50">
               <h2 className="text-2xl font-bold text-gray-800 mb-6">GST Information</h2>
               
               <div className="prose max-w-none">
@@ -665,30 +660,30 @@ const GSTPage: React.FC = () => {
                 <div className="mb-6">
                   <h3 className="text-lg font-semibold text-gray-800 mb-3">Common GST Slabs</h3>
                   <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-                    <div className="bg-blue-50 p-4 rounded-lg text-center">
+                    <div className="bg-blue-50/50 p-4 rounded-lg text-center border border-blue-100/50">
                       <h4 className="font-bold text-blue-700">0%</h4>
                       <p className="text-sm text-gray-600">Exempted Goods</p>
                     </div>
-                    <div className="bg-green-50 p-4 rounded-lg text-center">
+                    <div className="bg-green-50/50 p-4 rounded-lg text-center border border-green-100/50">
                       <h4 className="font-bold text-green-700">5%</h4>
                       <p className="text-sm text-gray-600">Essential Items</p>
                     </div>
-                    <div className="bg-yellow-50 p-4 rounded-lg text-center">
+                    <div className="bg-yellow-50/50 p-4 rounded-lg text-center border border-yellow-100/50">
                       <h4 className="font-bold text-yellow-700">12%</h4>
                       <p className="text-sm text-gray-600">Standard Rate</p>
                     </div>
-                    <div className="bg-orange-50 p-4 rounded-lg text-center">
+                    <div className="bg-orange-50/50 p-4 rounded-lg text-center border border-orange-100/50">
                       <h4 className="font-bold text-orange-700">18%</h4>
                       <p className="text-sm text-gray-600">Common Goods</p>
                     </div>
-                    <div className="bg-red-50 p-4 rounded-lg text-center">
+                    <div className="bg-red-50/50 p-4 rounded-lg text-center border border-red-100/50">
                       <h4 className="font-bold text-red-700">28%</h4>
                       <p className="text-sm text-gray-600">Luxury Items</p>
                     </div>
                   </div>
                 </div>
                 
-                <div className="bg-indigo-50 p-4 rounded-lg mb-6">
+                <div className="bg-indigo-50/50 p-4 rounded-lg mb-6 border border-indigo-100/50">
                   <h3 className="text-lg font-semibold text-indigo-800 mb-2">Special Rate</h3>
                   <p className="text-gray-700">
                     <span className="font-bold">40% GST</span> applies to "sin goods" like tobacco products, 
@@ -696,7 +691,7 @@ const GSTPage: React.FC = () => {
                   </p>
                 </div>
                 
-                <div className="border-t border-gray-200 pt-4">
+                <div className="border-t border-gray-200/50 pt-4">
                   <h3 className="text-lg font-semibold text-gray-800 mb-3">Key Points</h3>
                   <ul className="list-disc pl-5 space-y-2 text-gray-600">
                     <li>GST rates vary based on product type, size, engine capacity, and other specifications</li>
@@ -706,7 +701,7 @@ const GSTPage: React.FC = () => {
                     <li>Exports are zero-rated, while imports are treated as domestic supplies</li>
                   </ul>
                   
-                  <div className="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-100">
+                  <div className="mt-6 p-4 bg-blue-50/50 rounded-lg border border-blue-100/50">
                     <h4 className="font-semibold text-blue-800 mb-2">Official GST Rate Information</h4>
                     <p className="text-gray-700 mb-3">
                       For complete and official GST rates, please refer to the Government of India's notification:
@@ -715,7 +710,7 @@ const GSTPage: React.FC = () => {
                       href="https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/sep/doc202593627501.pdf" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium underline"
+                      className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium underline glass-button py-2 px-4 rounded-lg"
                     >
                       Download Official GST Rates PDF
                       <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">

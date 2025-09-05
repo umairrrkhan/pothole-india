@@ -1,30 +1,35 @@
-/* App.css - Enhanced styles with sophisticated aesthetics */
+/* App.css - Optimized styles for 120fps performance */
 
 /* Ensure consistent white background and black text */
 #root {
   background-color: #FFFFFF;
   color: #000000;
   min-height: 100vh;
+  /* Hardware acceleration */
+  transform: translateZ(0);
 }
 
-/* Smooth transitions for all interactive elements */
+/* Optimized transitions for 120fps performance */
 * {
-  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, transform 0.15s ease, opacity 0.15s ease;
+  /* Hardware acceleration for all elements */
+  transform: translateZ(0);
+  will-change: transform;
 }
 
-/* Enhanced custom scrollbar styling */
+/* Enhanced custom scrollbar styling - optimized */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
   background: #f1f5f9;
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(45deg, #3b82f6, #8b5cf6);
-  border-radius: 4px;
+  border-radius: 3px;
   border: 1px solid #f1f5f9;
 }
 
@@ -32,32 +37,32 @@
   background: linear-gradient(45deg, #2563eb, #7c3aed);
 }
 
-/* Loading spinner animation */
+/* Loading spinner animation - optimized */
 @keyframes spin {
   to {
-    transform: rotate(360deg);
+    transform: rotate(360deg) translateZ(0);
   }
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(10px) translateZ(0);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) translateZ(0);
   }
 }
 
 @keyframes fadeUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(20px) translateZ(0);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) translateZ(0);
   }
 }
 
@@ -71,19 +76,19 @@
 }
 
 .loading-spinner {
-  animation: spin 1s linear infinite;
+  animation: spin 0.8s linear infinite;
 }
 
 .pulse-animation {
-  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 .animate-fadeIn {
-  animation: fadeIn 0.6s ease-out forwards;
+  animation: fadeIn 0.3s ease-out forwards;
 }
 
 .animate-fadeUp {
-  animation: fadeUp 0.6s ease-out forwards;
+  animation: fadeUp 0.3s ease-out forwards;
 }
 
 /* Focus styles for accessibility */
@@ -100,6 +105,8 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+  /* Hardware acceleration for images */
+  transform: translateZ(0);
 }
 
 /* Ensure buttons don't have default browser styles */
@@ -108,6 +115,9 @@ button {
   cursor: pointer;
   border: none;
   background: none;
+  /* Hardware acceleration */
+  transform: translateZ(0);
+  will-change: transform;
 }
 
 /* Prevent text selection on interactive elements */
@@ -123,18 +133,24 @@ button,
   box-sizing: border-box;
 }
 
-/* Enhanced shadow effects */
+/* Enhanced shadow effects - optimized */
 .enhanced-shadow {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  /* Hardware acceleration */
+  transform: translateZ(0);
+  will-change: box-shadow;
 }
 
 .enhanced-shadow:hover {
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
-/* Smooth hover effects */
+/* High-performance hover effects */
 .smooth-hover {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  /* Hardware acceleration */
+  transform: translateZ(0);
+  will-change: transform;
 }
 
 /* Decorative line elements */
@@ -155,29 +171,34 @@ button,
   border-radius: 2px;
 }
 
-/* Floating animation for subtle movement */
+/* Floating animation for subtle movement - optimized */
 @keyframes float {
   0% {
-    transform: translateY(0px);
+    transform: translateY(0px) translateZ(0);
   }
   50% {
-    transform: translateY(-12px);
+    transform: translateY(-12px) translateZ(0);
   }
   100% {
-    transform: translateY(0px);
+    transform: translateY(0px) translateZ(0);
   }
 }
 
 .floating {
   animation: float 4s ease-in-out infinite;
+  /* Hardware acceleration */
+  transform: translateZ(0);
+  will-change: transform;
 }
 
-/* Glass morphism effect */
+/* Glass morphism effect - optimized */
 .glassmorphism {
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.18);
+  /* Hardware acceleration */
+  transform: translateZ(0);
 }
 
 /* Gradient text effect */
@@ -188,35 +209,38 @@ button,
   background-clip: text;
 }
 
-/* Card hover effect */
+/* Card hover effect - optimized */
 .card-hover {
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  /* Hardware acceleration */
+  transform: translateZ(0);
+  will-change: transform;
 }
 
 .card-hover:hover {
-  transform: translateY(-8px);
+  transform: translateY(-8px) translateZ(0);
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 /* Staggered animation delays */
 .staggered-animation > *:nth-child(1) {
-  animation-delay: 0.1s;
+  animation-delay: 0.05s;
 }
 
 .staggered-animation > *:nth-child(2) {
-  animation-delay: 0.2s;
+  animation-delay: 0.1s;
 }
 
 .staggered-animation > *:nth-child(3) {
-  animation-delay: 0.3s;
+  animation-delay: 0.15s;
 }
 
 .staggered-animation > *:nth-child(4) {
-  animation-delay: 0.4s;
+  animation-delay: 0.2s;
 }
 
 .staggered-animation > *:nth-child(5) {
-  animation-delay: 0.5s;
+  animation-delay: 0.25s;
 }
 
 /* Responsive typography */
@@ -226,20 +250,20 @@ button,
   }
 }
 
-/* Smooth reveal animation */
+/* Smooth reveal animation - optimized */
 @keyframes reveal {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(30px) translateZ(0);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) translateZ(0);
   }
 }
 
 .reveal-animation {
-  animation: reveal 0.8s ease-out forwards;
+  animation: reveal 0.4s ease-out forwards;
 }
 
 /* Parallax effect */
@@ -268,4 +292,6 @@ button,
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
   z-index: -1;
+  /* Hardware acceleration */
+  transform: translateZ(0);
 }
